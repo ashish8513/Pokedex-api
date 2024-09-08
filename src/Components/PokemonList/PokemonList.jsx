@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import './Pokemonlist.css'
 import Pokemon from '../Pokemon/Pokemon';
+import Search from '../Search/Search';
 
 function PokemonList() {
     const [pokemonList, setPokemonList] = useState([]);
@@ -11,6 +12,9 @@ function PokemonList() {
 
     const [nextUrl, setNextUrl] = useState('')
     const [prevUrl, setPrevUrl] = useState('')
+
+
+
     async function downloadPokemions() {
         setIsLoading(true);
         const response = await axios.get(pokedexUrl)
@@ -47,6 +51,7 @@ function PokemonList() {
         downloadPokemions();
     }, [pokedexUrl]);
 
+    // const searchData = pokemonList.filter((pokedexUrl) => pokedexUrl.name.toLowerCase().includes(search.toLowerCase()))
 
     return (
         <div className='pokemon-list-wrapper'>
@@ -60,7 +65,7 @@ function PokemonList() {
             </div>
             <div className='controls'>
                 <button disabled={prevUrl === null} onClick={() => setPokedexUrl(prevUrl)}>Prev</button>
-                <button disabled={nextUrl === null } onClick={() => setPokedexUrl(nextUrl)}>Next</button>
+                <button disabled={nextUrl === null} onClick={() => setPokedexUrl(nextUrl)}>Next</button>
             </div>
 
         </div>
