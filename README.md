@@ -19,4 +19,4 @@ PokéAPI: Free and open Pokémon RESTful API for fetching Pokémon data.
 API
 The app fetches data from the PokéAPI:
 
-Base URL: https://pokeapi.co/api/v2/
+Base URL: https://pokeapi.co/api/v2/pokemon to see Pokedex json file in the Browser 
