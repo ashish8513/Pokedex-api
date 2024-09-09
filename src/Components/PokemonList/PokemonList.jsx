@@ -24,6 +24,7 @@ function PokemonList() {
         setNextUrl(response.data.next)
         setPrevUrl(response.data.previous)
 
+        
         //iterating over the array of the pokemon data  and using their url to create an array of promises 
         // that will download those 20 pokemon data
         const pokemonResultPromise = pokemonResult.map((pokemon) => axios.get(pokemon.url));
@@ -63,9 +64,9 @@ function PokemonList() {
                     pokemonList.map((p) => <Pokemon name={p.name} image={p.image} key={p.id} id={p.id} />)
                 }
             </div>
-            <div className='controls'>
+            <div className='controls my-16'>
                 <button disabled={prevUrl === null} onClick={() => setPokedexUrl(prevUrl)}>Prev</button>
-                <button disabled={nextUrl === null} onClick={() => setPokedexUrl(nextUrl)}>Next</button>
+                <button className='py-2 px-4 ml-4' disabled={nextUrl === null} onClick={() => setPokedexUrl(nextUrl)}>Next</button>
             </div>
 
         </div>
