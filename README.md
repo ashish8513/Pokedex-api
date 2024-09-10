@@ -1,4 +1,4 @@
-<p align="center">Ashish Pokedex App<p>
+<h1 align="center" font="bold">Ashish Pokedex App<h1>
 This is a simple Pokedex app built with React and Vite. The app fetches data from the PokéAPI and displays a list of Pokémon, along with detailed information about each Pokémon, such as their abilities, types, and stats.
 
 Usage
