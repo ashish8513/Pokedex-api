@@ -11,7 +11,7 @@ Click on a Pokémon to view detailed information about its abilities, stats, and
 You can navigate through the Pokémon using the pagination or load more Pokémon as needed.
 Technologies Used
 
-![Home Page](https://github.com/ashish8513/Pokedex-api/blob/main/main%20page.png)
+![Home Page](https://github.com/ashish8513/Pokedex-api/blob/main/All%20data%20Pokedex.png)
 React: Frontend framework for building user interfaces.
 Vite: A fast build tool for modern web development.
 Tailwind CSS: Utility-first CSS framework for styling.
