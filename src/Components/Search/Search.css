@@ -1,6 +1,6 @@
 .search-wrapper {
     max-width: 100%;
-    width: 500px;
+    width: 100%;
     margin: 2rem auto;
     padding: 0 1rem;
     box-sizing: border-box;
@@ -19,4 +19,26 @@
 #pokemon-name-search:focus {
     outline: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    .search-wrapper {
+        max-width: 80%; 
+        width: 500px; 
+    }
+
+    #pokemon-name-search {
+        font-size: 1.1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .search-wrapper {
+        padding: 0 0.5rem; 
+    }
+
+    #pokemon-name-search {
+        padding: 0.75rem; 
+        font-size: 0.9rem;
+    }
 }

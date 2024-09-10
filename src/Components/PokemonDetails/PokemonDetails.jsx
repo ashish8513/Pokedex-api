@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import './PokemonDetail.css'
 
 function PokemonDetails() {
   const { id } = useParams();
+  const navigate=useNavigate()
   const [pokemon, setPokemon] = useState({})
   console.log(id)
 
@@ -27,6 +28,7 @@ function PokemonDetails() {
   }, [])
   return (
     <div className="pokemon-details-wrapper">
+    <button className="navigate-btn" onClick={()=>navigate(-1)}>Back</button>
       <img className="pokemon-image" src={pokemon.image}  />
       <div className="pokemon-details-name"><span>{pokemon.name}</span></div>
       <div className="pokemon-details-name">Height: {pokemon.height}</div>
