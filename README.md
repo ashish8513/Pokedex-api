@@ -20,3 +20,13 @@ API
 The app fetches data from the PokéAPI:
 
 Base URL: https://pokeapi.co/api/v2/pokemon to see Pokedex json file in the Browser 
+****
+
+I have also live the project in the Netlify Website
+
+https://ashishpokemonapi.netlify.app/
+
+You have to visit the website and see all the project
+
+
+******
